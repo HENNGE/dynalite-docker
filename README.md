@@ -3,7 +3,7 @@
 TL;DR:
 
 ```
-docker pull ghcr.io/HENNGE/dynalite
+docker pull ghcr.io/hennge/dynalite
 ```
 
 ## Notice 
@@ -22,20 +22,20 @@ With sane default settings: port 8000 and no artificial delay.
 Example use:
 
 ```
-docker pull ghcr.io/HENNGE/dynalite
+docker pull ghcr.io/hennge/dynalite
 ```
 
 Persistent data mode:
 
 ```
-docker run --init -p 8000:8000 -v /tmp/somewhere:/data ghcr.io/HENNGE/dynalite --path /data
+docker run --init -p 8000:8000 -v /tmp/somewhere:/data ghcr.io/hennge/dynalite --path /data
 ```
 
 Integration into docker-compose, for automated tests:
 
 ```yaml
   dynalite:
-    image: ghcr.io/HENNGE/dynalite
+    image: ghcr.io/hennge/dynalite
     init: true
     ports:
       - "8000:8000"
