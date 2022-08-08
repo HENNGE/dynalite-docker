@@ -3,16 +3,17 @@
 TL;DR:
 
 ```
-docker pull ghcr.io/dimaqq/dynalite
+docker pull ghcr.io/HENNGE/dynalite
 ```
 
-## Maintainer wanted
+## Notice 
 
-Sadly I don't use this image/protocol/k-v store, it would be awesome if someone stepped in to maintain 🙏
+We're taking over the maintenance of this repo from [dimaqq](https://github.com/dimaqq/dynalite-docker).
+Thank you for maintaining this repo this whole time 🙏.
 
 ## Details
 
-https://github.com/dimaqq/dynalite-docker/pkgs/container/dynalite
+https://github.com/HENNGE/dynalite-docker/pkgs/container/dynalite
 
 Docker container for latest `dynalite` (https://github.com/mhart/dynalite).
 
@@ -21,20 +22,20 @@ With sane default settings: port 8000 and no artificial delay.
 Example use:
 
 ```
-docker pull ghcr.io/dimaqq/dynalite
+docker pull ghcr.io/HENNGE/dynalite
 ```
 
 Persistent data mode:
 
 ```
-docker run --init -p 8000:8000 -v /tmp/somewhere:/data ghcr.io/dimaqq/dynalite --path /data
+docker run --init -p 8000:8000 -v /tmp/somewhere:/data ghcr.io/HENNGE/dynalite --path /data
 ```
 
 Integration into docker-compose, for automated tests:
 
 ```yaml
   dynalite:
-    image: ghcr.io/dimaqq/dynalite
+    image: ghcr.io/HENNGE/dynalite
     init: true
     ports:
       - "8000:8000"
