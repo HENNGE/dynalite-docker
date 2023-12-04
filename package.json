@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "dynalite": "^3.2.1"
+    "dynalite": "git+https://github.com/ojii/dynalite.git#dont-throw"
   },
   "devDependencies": {}
 }
